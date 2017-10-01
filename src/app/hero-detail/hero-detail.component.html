@@ -1,0 +1,20 @@
+<div *ngIf="hero">
+	<md-toolbar>
+		<h2>{{hero.name}} details!</h2>
+
+		<md-toolbar-row>
+			<h4> id : </h4>{{hero.id}} 
+		</md-toolbar-row>
+
+		<md-toolbar-row>
+			<form class="example-form">
+				<md-form-field class="example-full-width">
+					<input mdInput  [(ngModel)]="hero.name" placeholder="Hero Name" name="name">
+				</md-form-field>
+			</form>
+		</md-toolbar-row>
+		<md-toolbar-row>
+			  <button md-button color="primary" (click)="onNoClick()">close</button>
+			</md-toolbar-row>
+	</md-toolbar>  
+</div> 

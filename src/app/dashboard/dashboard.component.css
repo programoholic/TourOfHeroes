@@ -1,0 +1,13 @@
+.module {
+
+    display:inline;
+    float: left;
+    margin-left: 20px;
+    width:150px;
+    text-align:center;
+    cursor: pointer;
+}
+h3{
+
+	text-align: center;
+}

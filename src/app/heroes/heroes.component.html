@@ -1,0 +1,16 @@
+
+<md-card class="example-card">
+	<md-card-header>
+		<div md-card-avatar class="example-header-image"></div>
+	</md-card-header>
+	<md-card-content>
+		<div>
+			<div *ngFor="let hero of heroes" class="heroes">
+				<!-- <md-icon md-list-icon>folder</md-icon> -->
+				<md-button-toggle class="heroes" (click)="onSelect(hero)"><span class="badge">{{hero.id}} </span>  {{hero.name}}
+				</md-button-toggle>
+				<!--   <p md-line> <h4 class="badge"> </h4> </p> -->
+			</div>
+		</div>
+	</md-card-content>
+</md-card>

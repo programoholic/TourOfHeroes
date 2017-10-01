@@ -1,0 +1,6 @@
+<h3>Top Heroes</h3>
+  <div class="grid" *ngFor="let hero of heroes">
+    <md-card div class="module hero" (click)="navigator(hero)">
+      <h4>{{hero.name}}</h4>
+    </md-card>
+  </div>

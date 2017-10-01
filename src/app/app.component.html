@@ -1,0 +1,15 @@
+<md-toolbar color="primary">
+	<span>{{title}}</span>
+
+<!-- 
+	<nav>
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    </nav> -->
+    <button md-button (click)="navigator('dashboard')">Dashboard</button>
+    <button md-button (click)="navigator('heroes')">Heroes</button>
+	<!-- This fills the remaining space of the current row -->
+	<span class="example-fill-remaining-space"></span>
+</md-toolbar>
+
+<router-outlet></router-outlet>
